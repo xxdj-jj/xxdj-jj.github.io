@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380">
+  <defs>
+    <linearGradient id="pbg2" x1="0" x2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="pgold2" x1="0" x2="1">
+      <stop offset="0" stop-color="#d4af37" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#d4af37" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#pbg2)" />
+  <g transform="translate(20,20)">
+    <rect width="560" height="340" rx="10" fill="#08121a" />
+    <g fill="url(#pgold2)" transform="translate(30,30)">
+      <circle cx="100" cy="120" r="72" />
+      <rect x="220" y="10" width="260" height="18" rx="4" />
+      <rect x="220" y="40" width="200" height="18" rx="4" />
+    </g>
+  </g>
+</svg>

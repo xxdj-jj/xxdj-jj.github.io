@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380">
+  <defs>
+    <linearGradient id="pbg" x1="0" x2="1">
+      <stop offset="0" stop-color="#060606"/>
+      <stop offset="1" stop-color="#0b0b0b"/>
+    </linearGradient>
+    <linearGradient id="pgold" x1="0" x2="1">
+      <stop offset="0" stop-color="#d4af37" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#d4af37" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#pbg)" />
+  <g transform="translate(20,20)">
+    <rect width="560" height="340" rx="10" fill="#07111b" />
+    <g fill="url(#pgold)" transform="translate(30,30)">
+      <rect width="160" height="240" rx="8" />
+      <rect x="200" y="10" width="320" height="80" rx="6" />
+      <rect x="200" y="110" width="320" height="18" rx="4" />
+      <rect x="200" y="140" width="240" height="18" rx="4" />
+    </g>
+  </g>
+</svg>

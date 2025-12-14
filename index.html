@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-language="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nanyang Global Asset Management - 投资、加速与战略咨询平台，驱动亚洲企业全球成长">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://docs.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; frame-src https://docs.google.com;">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
+    <title>Nanyang Global Asset Management - 全球投资与战略平台</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="Nanyang Logo" class="logo-image">
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-zh="关于我们" data-en="About">关于我们</a></li>
+                <li><a href="#pillars" data-zh="投资框架" data-en="Pillars">投资框架</a></li>
+                <li><a href="#why" data-zh="为何选择" data-en="Why">为何选择</a></li>
+                <li><a href="#contact" data-zh="联系我们" data-en="Contact">联系我们</a></li>
+                <li class="language-toggle">
+                    <button id="langToggle" class="lang-btn">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="https://source.unsplash.com/1600x900/?executive,business,portrait" alt="Global business meeting" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+            <svg viewBox="0 0 1000 1000" class="hero-svg">
+                <defs>
+                    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#D4A574;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#D4A574;stop-opacity:0" />
+                    </radialGradient>
+                </defs>
+                <circle cx="500" cy="500" r="300" fill="url(#goldGlow)" />
+                <path d="M 500 200 Q 700 350 600 500 Q 700 650 500 800 Q 300 650 400 500 Q 300 350 500 200" 
+                      stroke="#D4A574" stroke-width="2" fill="none" opacity="0.5" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo-wrapper">
+                <svg viewBox="0 0 300 300" class="hero-icon-svg">
+                    <defs>
+                        <filter id="heroIconGlow">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- 外圆弧 -->
+                    <path class="hero-icon-glow" d="M 80 150 A 70 70 0 0 1 220 150" fill="none" stroke="#D4A574" stroke-width="10" stroke-linecap="round" filter="url(#heroIconGlow)"/>
+                    <!-- 内圆弧 -->
+                    <path class="hero-icon-glow" d="M 110 165 A 40 40 0 0 1 190 165" fill="none" stroke="#D4A574" stroke-width="8" stroke-linecap="round" filter="url(#heroIconGlow)"/>
+                    
+                    <!-- 水波纹 1 -->
+                    <path class="hero-icon-glow" d="M 85 185 Q 150 190 215 185" fill="none" stroke="#D4A574" stroke-width="6" stroke-linecap="round" filter="url(#heroIconGlow)"/>
+                    <!-- 水波纹 2 -->
+                    <path class="hero-icon-glow" d="M 90 205 Q 150 210 210 205" fill="none" stroke="#D4A574" stroke-width="6" stroke-linecap="round" filter="url(#heroIconGlow)"/>
+                    <!-- 水波纹 3 -->
+                    <path class="hero-icon-glow" d="M 95 225 Q 150 230 205 225" fill="none" stroke="#D4A574" stroke-width="6" stroke-linecap="round" filter="url(#heroIconGlow)"/>
+                </svg>
+            </div>
+            <h1 class="hero-title" data-zh="赋能全球市场增长" data-en="Empowering Growth Across Global Markets">赋能全球市场增长</h1>
+            <h2 class="hero-subtitle" data-zh="投资一级与二级市场 · 加速创新 · 提供战略咨询" data-en="Investing in Primary & Secondary Markets · Accelerating Innovation · Delivering Strategic Advisory">
+                投资一级与二级市场 · 加速创新 · 提供战略咨询
+            </h2>
+            <div class="hero-buttons">
+                <button class="btn btn-secondary" id="partnerButton" data-zh="成为合作伙伴" data-en="Partner With Us">成为合作伙伴</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-zh="为全球影响力打造的现代投资平台" data-en="A Modern Investment Platform Built for Global Impact">为全球影响力打造的现代投资平台</h2>
+            <p class="section-intro" data-zh="南洋全球资产管理公司是一个面向下一代的投资机构，致力于在全球市场中创造长期价值。我们将机构级投资策略与亚洲地区深厚的专业知识相结合，能够在企业的每个成长阶段——从早期创立到市场扩展和二级流动性——进行投资、加速和指导。" data-en="Nanyang Global Asset Management is a next-generation investment firm focused on delivering long-term value across global markets. We combine institutional-grade investment strategies with deep regional insight across Asia, enabling us to invest, accelerate, and guide companies through every stage of growth.">
+                南洋全球资产管理公司是一个面向下一代的投资机构，致力于在全球市场中创造长期价值。我们将机构级投资策略与亚洲地区深厚的专业知识相结合，能够在企业的每个成长阶段——从早期创立到市场扩展和二级流动性——进行投资、加速和指导。
+            </p>
+
+            <div class="about-image">
+                    <img src="assets/img/about.jpg" alt="Team collaboration" class="about-img" loading="lazy">
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Bar chart SVG (Precision) -->
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="3" y="12" width="3" height="9" rx="0.5" fill="currentColor" />
+                            <rect x="9" y="7" width="3" height="14" rx="0.5" fill="currentColor" />
+                            <rect x="15" y="3" width="3" height="18" rx="0.5" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3 data-zh="精准" data-en="Precision">精准</h3>
+                    <p data-zh="跨资产类别的数据驱动配置" data-en="Data-driven allocation across asset classes">跨资产类别的数据驱动配置</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Up arrow SVG (Growth) -->
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 19V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 data-zh="增长" data-en="Growth">增长</h3>
+                    <p data-zh="战略孵化与加速" data-en="Strategic incubation and acceleration">战略孵化与加速</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Globe SVG (Insight) -->
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <path d="M2 12h20M12 2v20" stroke="currentColor" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3 data-zh="洞察" data-en="Insight">洞察</h3>
+                    <p data-zh="基于全球经验的咨询" data-en="Advisory grounded in global experience">基于全球经验的咨询</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Shield SVG (Integrity) -->
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 2l7 3v5c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5l7-3z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 data-zh="诚信" data-en="Integrity">诚信</h3>
+                    <p data-zh="透明和负责任的资本管理" data-en="Transparent and responsible capital stewardship">透明和负责任的资本管理</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Pillars Section -->
+    <section class="pillars" id="pillars">
+        <div class="container">
+            <h2 class="section-title light" data-zh="投资框架" data-en="Our Pillars">投资框架</h2>
+            <div class="pillars-grid">
+                <!-- Pillar 1: Investment -->
+                <div class="pillar-card">
+                    <div class="pillar-image">
+                            <img src="assets/img/investment.jpg?t=20250101" alt="Investment" loading="lazy">
+                        </div>
+                        <div class="pillar-icon">
+                            <!-- Briefcase SVG -->
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="7" width="18" height="12" rx="1" stroke="currentColor" stroke-width="1.5" fill="none" />
+                                <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
+                    <h3 data-zh="投资" data-en="Investment">投资</h3>
+                    <p class="pillar-subtitle" data-zh="一级与二级市场" data-en="Primary & Secondary Markets">一级与二级市场</p>
+                    <p class="pillar-text" data-zh="我们在一级和二级市场部署资本，在新兴行业、颠覆性技术和韧性强的行业领导者中识别高度确信的机会。我们的投资策略旨在最大化回报，同时维持风险纪律。" data-en="We deploy capital across primary and secondary markets, identifying high-conviction opportunities in emerging industries, disruptive technologies, and resilient sector leaders.">
+                        我们在一级和二级市场部署资本，在新兴行业、颠覆性技术和韧性强的行业领导者中识别高度确信的机会。我们的投资策略旨在最大化回报，同时维持风险纪律。
+                    </p>
+                    <ul class="pillar-list">
+                        <li data-zh="高成长早期投资（一级市场）" data-en="High-growth early stage (Primary)">高成长早期投资（一级市场）</li>
+                        <li data-zh="二级市场区块交易" data-en="Secondary market block trades">二级市场区块交易</li>
+                        <li data-zh="战略性权益头寸" data-en="Strategic equity positions">战略性权益头寸</li>
+                        <li data-zh="跨境投资结构" data-en="Cross-border investment structures">跨境投资结构</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2: Incubation & Acceleration -->
+                <div class="pillar-card">
+                    <div class="pillar-image">
+                        <img src="assets/img/acceleration.jpg" alt="Acceleration" loading="lazy">
+                    </div>
+                    <div class="pillar-icon">
+                        <!-- Rocket SVG -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M6 21s2-1 4-3 4-4 4-4 2 2 3 4c1 2 1 3 1 3s-2 0-5-1c-3-1-5-2-7-2z" fill="currentColor" opacity="0.15"/>
+                            <path d="M14 3s-1 0-4 3c-3 3-3 4-3 4s1 0 4-3c3-3 3-4 3-4z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 data-zh="孵化与加速" data-en="Incubation & Acceleration">孵化与加速</h3>
+                    <p class="pillar-subtitle" data-zh="创业者成长引擎" data-en="Founder Growth Engine">创业者成长引擎</p>
+                    <p class="pillar-text" data-zh="我们的孵化器为早期和扩展阶段的公司提供资本、导师指导和网络支持，帮助他们加速成长。我们与创始人合作，优化策略、全球扩张并为机构投资做准备。" data-en="Our incubator supports early-stage and scaling companies with the capital, mentorship, and network they need to accelerate growth.">
+                        我们的孵化器为早期和扩展阶段的公司提供资本、导师指导和网络支持，帮助他们加速成长。我们与创始人合作，优化策略、全球扩张并为机构投资做准备。
+                    </p>
+                    <ul class="pillar-list">
+                        <li data-zh="创始人咨询与指导" data-en="Founder advisory & mentorship">创始人咨询与指导</li>
+                        <li data-zh="市场进入策略（亚洲聚焦）" data-en="Market entry strategy (Asia focus)">市场进入策略（亚洲聚焦）</li>
+                        <li data-zh="商业模式优化" data-en="Business model refinement">商业模式优化</li>
+                        <li data-zh="融资准备与投资者接洽" data-en="Fundraising preparation & investor access">融资准备与投资者接洽</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3: Strategic Consultancy -->
+                <div class="pillar-card">
+                    <div class="pillar-image">
+                        <img src="assets/img/consultancy.jpg" alt="Consultancy" loading="lazy">
+                    </div>
+                    <div class="pillar-icon">
+                        <!-- Target SVG -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1" fill="none"/>
+                            <path d="M21 3l-6 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 data-zh="战略咨询" data-en="Strategic Consultancy">战略咨询</h3>
+                    <p class="pillar-subtitle" data-zh="量身定制的解决方案" data-en="Bespoke Solutions">量身定制的解决方案</p>
+                    <p class="pillar-text" data-zh="我们为寻求扩展、重组或优化运营的公司、基金和家族办公室提供定制咨询方案。我们在多个市场的深厚经验使我们能够提供清晰、可执行的洞察。" data-en="We provide bespoke consultancy solutions for companies, funds, and family offices seeking to expand, restructure, or optimize operations.">
+                        我们为寻求扩展、重组或优化运营的公司、基金和家族办公室提供定制咨询方案。我们在多个市场的深厚经验使我们能够提供清晰、可执行的洞察。
+                    </p>
+                    <ul class="pillar-list">
+                        <li data-zh="企业战略与业务转型" data-en="Corporate strategy & business transformation">企业战略与业务转型</li>
+                        <li data-zh="资本与融资咨询" data-en="Capital & fundraising advisory">资本与融资咨询</li>
+                        <li data-zh="进军东南亚市场" data-en="Market expansion to Southeast Asia">进军东南亚市场</li>
+                        <li data-zh="跨境结构化（投资与合规）" data-en="Cross-border structuring (investment & compliance)">跨境结构化（投资与合规）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Nanyang Section -->
+    <section class="why-nanyang" id="why">
+        <div class="container">
+            <div class="why-content">
+                <div class="why-image">
+                    <img src="assets/img/why-nanyang.jpg" alt="Global leadership" loading="lazy">
+                </div>
+                <div class="why-text">
+                    <h2 class="why-title" data-zh="为何选择南洋" data-en="Why Nanyang">为何选择南洋</h2>
+                    <div class="why-statement">
+                        <p class="statement-highlight" data-zh="我们结合资本、战略和生态系统接入，赋能亚洲企业走向世界。" data-en="We combine capital, strategy, and ecosystem access to empower companies from Asia to the world.">
+                            我们结合资本、战略和生态系统接入，赋能亚洲企业走向世界。
+                        </p>
+                        <p class="statement-body" data-zh="我们的平台位于投资、创新和战略执行的交汇点——使创始人、投资者和合作伙伴能够更快、更聪明、更远地前进。" data-en="Our platform sits at the intersection of investment, innovation, and strategic execution—enabling founders, investors, and partners to move faster, smarter, and further.">
+                            我们的平台位于投资、创新和战略执行的交汇点——使创始人、投资者和合作伙伴能够更快、更聪明、更远地前进。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Partnership Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title light" data-zh="与我们合作" data-en="Partner With Us">与我们合作</h2>
+            <p class="contact-intro" data-zh="我们欢迎战略合作伙伴、创始人和投资者加入，共同获取全球市场、机构资本和我们精心打造的投资生态系统。" data-en="We welcome strategic partners, founders, and investors seeking access to global markets, institutional capital, and our refined investment ecosystem.">
+                我们欢迎战略合作伙伴、创始人和投资者加入，共同获取全球市场、机构资本和我们精心打造的投资生态系统。
+            </p>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOTg4Sm3p6CrO87VeneQHUvJ60fxv0L6Qzn9ZTBehQrh2F8g/viewform?embedded=true" width="640" height="542" frameborder="0" marginheight="0" marginwidth="0" sandbox="allow-forms allow-scripts allow-same-origin allow-popups" referrerpolicy="no-referrer">Loading…</iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.svg" alt="Nanyang Logo" class="footer-logo-image">
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <a href="#about" data-zh="关于" data-en="About">关于</a>
+                <a href="#pillars" data-zh="投资框架" data-en="Pillars">投资框架</a>
+                <a href="#why" data-zh="为何选择" data-en="Why">为何选择</a>
+                <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+            </nav>
+            <div class="footer-legal">
+                <p data-zh="© 2024 南洋全球资产管理公司" data-en="© 2024 NANYANG GLOBAL ASSET MANAGEMENT">© 2024 南洋全球资产管理公司</p>
+                <p><a href="#">合规与法律声明</a> | <a href="#">隐私政策</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

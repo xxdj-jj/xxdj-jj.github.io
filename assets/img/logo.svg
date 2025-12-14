@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <defs>
+    <style>
+      .logo-text { font-family: Arial, sans-serif; font-weight: bold; letter-spacing: 4px; }
+      .logo-icon-gradient { stop-color: #D4A574; }
+    </style>
+    <radialGradient id="logoBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    <filter id="logoGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="900" fill="url(#logoBg)"/>
+  
+  <!-- Logo 图形 (日出 + 水波纹) -->
+  <g transform="translate(400, 250)" filter="url(#logoGlow)">
+    <!-- 外圆弧 -->
+    <path d="M -80 0 A 80 80 0 0 1 80 0" fill="none" stroke="#D4A574" stroke-width="12" stroke-linecap="round"/>
+    <!-- 内圆弧 -->
+    <path d="M -50 20 A 50 50 0 0 1 50 20" fill="none" stroke="#D4A574" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- 水波纹 1 -->
+    <path d="M -70 50 Q -40 55 0 50 Q 40 45 70 50" fill="none" stroke="#D4A574" stroke-width="8" stroke-linecap="round"/>
+    <!-- 水波纹 2 -->
+    <path d="M -65 70 Q -35 75 0 70 Q 35 65 65 70" fill="none" stroke="#D4A574" stroke-width="8" stroke-linecap="round"/>
+    <!-- 水波纹 3 -->
+    <path d="M -60 90 Q -30 95 0 90 Q 30 85 60 90" fill="none" stroke="#D4A574" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 文字 -->
+  <text x="400" y="500" class="logo-text" font-size="72" fill="#D4A574" text-anchor="middle" letter-spacing="8">NANYANG</text>
+  <text x="400" y="580" class="logo-text" font-size="36" fill="#D4A574" text-anchor="middle" letter-spacing="6" opacity="0.9">GLOBAL ASSET MANAGEMENT</text>
+  
+  <!-- 底部装饰线 -->
+  <line x1="150" y1="650" x2="650" y2="650" stroke="#D4A574" stroke-width="2" opacity="0.4"/>
+</svg>
